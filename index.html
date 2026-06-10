@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidronomia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão de acessibilidade fixo -->
+    <div class="acessibilidade">
+        <button onclick="aumentarFonte()">A+</button>
+        <button onclick="diminuirFonte()">A-</button>
+        <button onclick="alternarContraste()">🌓</button>
+        <button onclick="alternarModoEscuro()">🌙</button>
+    </div>
 
+    <header>
+        <h1>Hidronomia</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre o Tema</a></li>
+                <li><a href="#problemas">Problemas</a></li>
+                <li><a href="#consumo">Consumo Médio</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Página inicial -->
+        <section id="inicio">
+            <h2>Bem-vindo ao Hidronomia</h2>
+            <p>Aprenda a economizar água e contribuir para um futuro sustentável na agricultura e no seu dia a dia.</p>
+        </section>
+
+        <!-- Sobre o tema -->
+        <section id="sobre">
+            <h2>Sobre o Tema</h2>
+            <p>O desperdício de água é um problema crescente. Usar a água de forma consciente é essencial para o equilíbrio ambiental e para a agricultura sustentável.</p>
+        </section>
+
+        <!-- Problemas causados -->
+        <section id="problemas">
+            <h2>Problemas Causados pelo Desperdício de Água</h2>
+            <ul>
+                <li>Escassez de água potável</li>
+                <li>Impactos negativos na agricultura</li>
+                <li>Diminuição da biodiversidade</li>
+                <li>Poluição de rios e nascentes</li>
+            </ul>
+        </section>
+
+        <!-- Tabela de consumo médio de água -->
+        <section id="consumo">
+            <h2>Consumo Médio de Água por Atividade</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atividade</th>
+                        <th>Consumo por minuto (litros)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chuveiro</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Torneira aberta</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Lavar roupa</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Lavar louça</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Calculadora de consumo de água -->
+        <section id="calculadora">
+            <h2>Calculadora de Consumo de Água</h2>
+            <p>Insira a quantidade de água disponível, o consumo por minuto e o tempo de uso. O cálculo mostrará quanto foi gasto e quanto sobra.</p>
+            <form id="form-calculadora">
+                <label for="litros">Litros iniciais disponíveis:</label>
+                <input type="number" id="litros" required>
+
+                <label for="uso-por-minuto">Litros consumidos por minuto:</label>
+                <input type="number" id="uso-por-minuto" required>
+
+                <label for="tempo-uso">Tempo de uso (minutos):</label>
+                <input type="number" id="tempo-uso" required>
+
+                <button type="button" onclick="calcularConsumo()">Calcular</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+
+        <!-- Soluções dos problemas -->
+        <section id="solucoes">
+            <h2>Soluções Sustentáveis</h2>
+            <ul>
+                <li>Reutilização de água da chuva</li>
+                <li>Irrigação inteligente no campo</li>
+                <li>Conserto de vazamentos domésticos</li>
+                <li>Uso consciente da água no dia a dia</li>
+            </ul>
+        </section>
+
+        <!-- Conclusão -->
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>Economizar água é responsabilidade de todos. Pequenas atitudes podem garantir um futuro sustentável para a agricultura e para o meio ambiente.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hidronomia &copy; 2026 - Projeto Concurso Agrinho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
